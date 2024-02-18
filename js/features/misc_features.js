@@ -27,10 +27,14 @@ function expandAllCommentsOnCtrlF(event) {
 
     if ((event.metaKey || event.ctrlKey) && (event.keyCode === 70 || event.keyCode === 102)) {
         // console.log("CMD+F detected");
-        let allShowMoreCommentsLinksArray = document.getElementsByClassName("js-show-link comments-link");
-        for (let i = 0; i < allShowMoreCommentsLinksArray.length; i++) {
-            let showMoreCommentsLink = allShowMoreCommentsLinksArray[i];
-            showMoreCommentsLink.click();
-        }
+	expandAllComments();
+    }
+}
+
+function expandAllComments() {
+    let allShowMoreCommentsLinksArray = document.getElementsByClassName("js-show-link comments-link");
+    for (let i = 0; i < allShowMoreCommentsLinksArray.length; i++) {
+        let showMoreCommentsLink = allShowMoreCommentsLinksArray[i];
+        showMoreCommentsLink.click();
     }
 }

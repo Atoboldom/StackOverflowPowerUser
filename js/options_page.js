@@ -27,6 +27,7 @@ function saveSettings() {
     let autoExpandVotesCountEnabled = document.getElementById('autoExpandVotesCountEnabled').checked;
     let stickyScrollOnUpvoteButtons = document.getElementById('stickyScrollOnUpvoteButtons').checked;
     let expandAllCommentsOnCtrlfEnabled = document.getElementById('expandAllCommentsOnCtrlfEnabled').checked;
+    let expandAllComments = document.getElementById('expandAllComments').checked;
     let hideHotNetworkQuestions = document.getElementById('hideHotNetworkQuestions').checked;
     let hideMetaPosts = document.getElementById('hideMetaPosts').checked;
     let adjustPageWidthEnabled = document.getElementById('adjustPageWidthEnabled').checked;
@@ -42,6 +43,7 @@ function saveSettings() {
         autoExpandVotesCountEnabled: autoExpandVotesCountEnabled,
         stickyScrollOnUpvoteButtons: stickyScrollOnUpvoteButtons,
         expandAllCommentsOnCtrlfEnabled: expandAllCommentsOnCtrlfEnabled,
+        expandAllComments: expandAllComments,
         hideHotNetworkQuestions: hideHotNetworkQuestions,
         hideMetaPosts: hideMetaPosts,
         adjustPageWidthEnabled: adjustPageWidthEnabled,
@@ -68,6 +70,7 @@ function restoreSettings() {
         autoExpandVotesCountEnabled: true,
         stickyScrollOnUpvoteButtons: true,
         expandAllCommentsOnCtrlfEnabled: true,
+        expandAllComments: true,
         hideHotNetworkQuestions: false,
         hideMetaPosts: false,
         adjustPageWidthEnabled: false,
@@ -83,6 +86,7 @@ function restoreSettings() {
         document.getElementById('autoExpandVotesCountEnabled').checked = items.autoExpandVotesCountEnabled;
         document.getElementById('stickyScrollOnUpvoteButtons').checked = items.stickyScrollOnUpvoteButtons;
         document.getElementById('expandAllCommentsOnCtrlfEnabled').checked = items.expandAllCommentsOnCtrlfEnabled;
+        document.getElementById('expandAllComments').checked = items.expandAllComments;
         document.getElementById('hideHotNetworkQuestions').checked = items.hideHotNetworkQuestions;
         document.getElementById('hideMetaPosts').checked = items.hideMetaPosts;
         document.getElementById('adjustPageWidthEnabled').checked = items.adjustPageWidthEnabled;

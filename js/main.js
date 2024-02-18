@@ -73,6 +73,10 @@ getUserPrefs(function() {
         document.addEventListener("keydown", expandAllCommentsOnCtrlF, false);
     }
 
+    if (userPrefs.expandAllComments) {
+        expandAllComments();
+    }
+
 
     //HIDE ELEMENTS
 
@@ -161,6 +165,7 @@ function getUserPrefs(callback) {
         autoExpandVotesCountEnabled: true,
         stickyScrollOnUpvoteButtons: true,
         expandAllCommentsOnCtrlfEnabled: true,
+        expandAllComments: true,
         hideHotNetworkQuestions: false,
         hideMetaPosts: false,
         adjustPageWidthEnabled: false,
